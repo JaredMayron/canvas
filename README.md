@@ -16,7 +16,7 @@ The custom domain is `c.mayron.us` (`CNAME` at the repository root). Point a DNS
 
 ## Add a page
 
-1. Create `your-page-slug/index.html`. Copy the head, navbar, and footer from `blues-2026-10-22/index.html`. Stylesheet, script, and home links stay root-absolute (`/STATIC/...`, `/`). The header is the name "Jared Mayron" and the nav, with no tagline under the name.
+1. Create `your-page-slug/index.html`. Copy the head, navbar, and footer from `blues-2026-10-22/index.html`. Stylesheet, script, and home links stay root-absolute (`/STATIC/...`, `/`). The header is the name "Jared Mayron" and the nav, with no tagline under the name. Pages caches CSS for several minutes, so when you change `main.css` or `site.css`, bump the `?v=` on those stylesheet links.
 2. After the introduction, include the "On this page" box (`nav.on-page` in `site.css`). Copy it from the Blues page: a small "On this page" heading, then sentence-case links in `ul.on-page-links`, one per section. The links are normal body size, two columns on a wide window and one column on a phone. Give each section a matching `id`.
 3. On an event page, keep `<meta name="robots" content="noindex">`. Leave out confirmation codes, order numbers, ticket codes, and flight seat numbers. The page is public.
 4. Add a card to the list in `index.html` that links to `/your-page-slug/`.
