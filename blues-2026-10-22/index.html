@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var dark = localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+  <title>Blues vs Golden Knights: Thu Oct 22, 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Tonight's plan from the hotel to Cameron's to Enterprise Center and back, plus a note for tomorrow's flight home.">
+  <meta name="author" content="Jared Mayron">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/STATIC/images/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/STATIC/styles/main.css">
+  <link rel="stylesheet" href="/STATIC/styles/site.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-row">
+      <a class="navbar-brand" href="/">
+        <div class="serif">Jared Mayron</div>
+        <div class="mono text-secondary brand-tag">Academic research, orphaned projects, and creative engineering</div>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li><a class="nav-link" href="https://mayron.us">mayron.us</a></li>
+        <li>
+          <button id="theme-toggle" class="btn btn-link nav-link p-2" type="button" aria-label="Toggle theme">
+            <svg id="theme-toggle-dark-icon" class="d-none" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="d-none" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <header class="hero">
+      <div class="pills">
+        <span class="pill">Tickets in hand</span>
+        <span class="pill">Fourth Wing Night</span>
+      </div>
+      <h1 class="serif">Golden Knights at Blues</h1>
+      <p class="where">Thursday, October 22, 2026 at Enterprise Center</p>
+      <p class="seats mono">Section 314, Row N, 6 tickets</p>
+      <div class="time-card">
+        <p class="hero-time serif">7:00pm CT</p>
+        <p class="puck-label mono">Puck drop</p>
+        <p class="gates">Gates open 5:30pm</p>
+      </div>
+      <p class="summary">Tonight's plan from the hotel to Cameron's to Enterprise Center and back, plus a note for tomorrow's flight home.</p>
+      <nav class="jump" aria-label="On this page">
+        <a href="#tonight">Tonight</a>
+        <a href="#tickets">Tickets</a>
+        <a href="#whos-going">Who's going</a>
+        <a href="#before">Know before you go</a>
+        <a href="#metrolink">MetroLink</a>
+        <a href="#back">Getting back</a>
+        <a href="#directions">Directions</a>
+        <a href="#tomorrow">Tomorrow</a>
+      </nav>
+    </header>
+
+    <div class="stack">
+      <section class="panel" id="tonight" aria-labelledby="tonight-title">
+        <h2 id="tonight-title" class="serif">Tonight</h2>
+        <ol class="timeline">
+          <li class="step">
+            <time class="when" datetime="2026-10-22T17:30-05:00">5:30pm</time>
+            <h3>Leave the SpringHill Suites</h3>
+            <p>About 8 miles east on I-64 to the Cortex area. Normally 20 to 25 minutes by rideshare; allow 25 to 30 in evening rush. Arena gates also open at 5:30pm.</p>
+          </li>
+          <li class="step">
+            <time class="when" datetime="2026-10-22T18:00-05:00">6:00pm</time>
+            <h3>Pre-game hang at Cameron's</h3>
+            <p>Near the Cortex MetroLink stop. Free parking at Cameron's. Exact pin is in Cameron's Google Maps link in the group chat.</p>
+          </li>
+          <li class="step">
+            <time class="when" datetime="2026-10-22T18:30-05:00">6:30pm</time>
+            <h3>Head out from Cameron's</h3>
+            <p>Walk about 10 minutes to Cortex station. Have a ticket or the Transit app ready before you reach the gates.</p>
+          </li>
+          <li class="step">
+            <time class="when" datetime="2026-10-22T18:40-05:00">6:40pm</time>
+            <h3>Red Line east from Cortex</h3>
+            <p>Scheduled into Civic Center at 6:47pm. If you miss it, the next eastbound train is a Blue Line at 6:50pm, into Civic Center at 6:57pm.</p>
+          </li>
+          <li class="step">
+            <time class="when" datetime="2026-10-22T18:53-05:00">About 6:53pm</time>
+            <h3>Walk in and clear security</h3>
+            <p>About 6 minutes on foot from Civic Center station. Bags add time at security.</p>
+          </li>
+          <li class="step">
+            <time class="when" datetime="2026-10-22T19:00-05:00">7:00pm</time>
+            <h3>Puck drop</h3>
+            <p>Section 314, Row N.</p>
+          </li>
+          <li class="step">
+            <time class="when" datetime="2026-10-22T21:30-05:00">About 9:30pm</time>
+            <h3>Final horn</h3>
+            <p>Estimated end. The Michelob ULTRA 4th Period runs after the game in the Biergarten if you want to let the crowd clear.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="panel" id="tickets" aria-labelledby="tickets-title">
+        <h2 id="tickets-title" class="serif">Tickets</h2>
+        <dl class="facts">
+          <dt>Game</dt>
+          <dd>Vegas Golden Knights at St. Louis Blues</dd>
+          <dt>Seats</dt>
+          <dd>Section 314, Row N</dd>
+          <dt>Count</dt>
+          <dd>6 tickets</dd>
+          <dt>Entry</dt>
+          <dd>Open the order in the StubHub app</dd>
+        </dl>
+      </section>
+
+      <section class="panel" id="whos-going" aria-labelledby="whos-going-title">
+        <h2 id="whos-going-title" class="serif">Who's going</h2>
+        <ul class="people">
+          <li class="person">
+            <span class="name">Cameron</span>
+            <span class="role">Hosting the pre-game hang</span>
+          </li>
+          <li class="person"><span class="name">Justin</span></li>
+          <li class="person"><span class="name">Riley</span></li>
+          <li class="person"><span class="name">Tyler</span></li>
+          <li class="person"><span class="name">Lisa</span></li>
+        </ul>
+      </section>
+
+      <section class="panel" id="before" aria-labelledby="before-title">
+        <h2 id="before-title" class="serif">Know before you go</h2>
+        <div class="callout" role="note">
+          <p class="callout-label">Warning</p>
+          <p>Bags slow down entry. Every bag goes through x-ray, which can add 30 minutes or more. Coolers, hard-sided bags, luggage, and any bag over 16 x 16 inches are not allowed and cannot be checked. Clutches up to 6 x 4 x 1.5 inches skip x-ray. Clear bags are not required.</p>
+        </div>
+        <ul class="checklist">
+          <li>Power banks are not on the arena's prohibited-items list. Charging stations are at Portals 2, 5, 15 and 19 (Plaza) and 38, 43, 54 and 64 (Mezzanine); bring your own cable.</li>
+          <li>Enterprise Center is cash-free at concessions and retail.</li>
+          <li>An empty plastic reusable water bottle (up to 2 liters) is allowed. Metal and glass bottles are not.</li>
+          <li>Stop in Play: wait for a stoppage before heading to your seats.</li>
+          <li>Rideshare zone: north end of 14th Street between Market St and Clark Ave.</li>
+        </ul>
+      </section>
+
+      <section class="panel" id="metrolink" aria-labelledby="metrolink-title">
+        <h2 id="metrolink-title" class="serif">MetroLink</h2>
+        <div class="fare-grid">
+          <div class="fare">
+            <span class="label mono">One ride</span>
+            <span class="amount">$2.50</span>
+          </div>
+          <div class="fare">
+            <span class="label mono">One-Day Pass</span>
+            <span class="amount">$5.00</span>
+            <span class="note">bus and rail</span>
+          </div>
+        </div>
+        <dl class="facts">
+          <dt>Buy</dt>
+          <dd>Ticket machines at every station, or the Transit app</dd>
+          <dt>Service</dt>
+          <dd>About 5am to 1am daily</dd>
+        </dl>
+        <p class="fare-note">A round trip on single rides is $5.00, the same as a One-Day Pass, so either works. Tap &amp; Ride in the Transit app caps your fare at the pass price automatically.</p>
+      </section>
+
+      <section class="panel" id="back" aria-labelledby="back-title">
+        <h2 id="back-title" class="serif">Getting back to the hotel</h2>
+        <p>The hotel is near Brentwood I-64 station, which is on the Blue Line. From Civic Center, take a westbound Blue Line train (toward Shrewsbury-Lansdowne I-44) to Brentwood I-64, then walk or grab a short ride to the hotel. <strong>Red Line trains do not go to Brentwood.</strong> If a Red Line comes first, you can ride it to Forest Park-DeBaliviere and switch to the Blue Line there. Rideshare from the 14th Street zone is the backup.</p>
+      </section>
+
+      <section class="panel" id="directions" aria-labelledby="directions-title">
+        <h2 id="directions-title" class="serif">Directions</h2>
+        <div class="links">
+          <a class="link-card" href="https://www.google.com/maps/dir/?api=1&amp;origin=SpringHill%20Suites%20St.%20Louis%20Brentwood%2C%201231%20Strassner%20Dr%2C%20St.%20Louis%2C%20MO%2063144&amp;destination=Cortex%20MetroLink%20Station%2C%20402%20S%20Boyle%20Ave%2C%20St.%20Louis%2C%20MO%2063110&amp;travelmode=driving" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">Driving</span>
+              <span class="title">Hotel to the Cortex area</span>
+              <span class="detail">Use Cameron's pin for the exact door.</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://www.google.com/maps/dir/?api=1&amp;origin=Cortex%2C%20St.%20Louis%2C%20MO&amp;destination=Cortex%20MetroLink%20Station%2C%20402%20S%20Boyle%20Ave%2C%20St.%20Louis%2C%20MO%2063110&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">Walking</span>
+              <span class="title">Cortex area to Cortex MetroLink station</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://www.google.com/maps/dir/?api=1&amp;origin=Civic%20Center%20MetroLink%20Station%2C%20401%20S%2014th%20St%2C%20St.%20Louis%2C%20MO%2063103&amp;destination=Enterprise%20Center%2C%201401%20Clark%20Ave%2C%20St.%20Louis%2C%20MO%2063103&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">Walking</span>
+              <span class="title">Civic Center station to Enterprise Center</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://www.google.com/maps/dir/?api=1&amp;origin=Enterprise%20Center%2C%201401%20Clark%20Ave%2C%20St.%20Louis%2C%20MO%2063103&amp;destination=SpringHill%20Suites%20St.%20Louis%20Brentwood%2C%201231%20Strassner%20Dr%2C%20St.%20Louis%2C%20MO%2063144&amp;travelmode=transit" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">Transit</span>
+              <span class="title">Enterprise Center back to the hotel by MetroLink</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://www.google.com/maps/dir/?api=1&amp;origin=Brentwood%20I-64%20MetroLink%20Station%2C%208398%20Eager%20Rd%2C%20St.%20Louis%2C%20MO%2063144&amp;destination=SpringHill%20Suites%20St.%20Louis%20Brentwood%2C%201231%20Strassner%20Dr%2C%20St.%20Louis%2C%20MO%2063144&amp;travelmode=walking" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">Walking</span>
+              <span class="title">Brentwood I-64 station to the hotel</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://www.nhl.com/blues/fans/gameday-guide" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">Guide</span>
+              <span class="title">Blues gameday guide for tonight</span>
+              <span class="detail">nhl.com/blues/fans/gameday-guide</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel" id="tomorrow" aria-labelledby="tomorrow-title">
+        <h2 id="tomorrow-title" class="serif">Tomorrow: checkout and flight home</h2>
+        <dl class="facts">
+          <dt>Day</dt>
+          <dd>Fri Oct 23, checkout day</dd>
+          <dt>Flight</dt>
+          <dd>Southwest WN 1361</dd>
+          <dt>Route</dt>
+          <dd>STL 7:40pm to DAL 9:20pm CT</dd>
+          <dt>Leave hotel by</dt>
+          <dd>5:35pm CT</dd>
+        </dl>
+      </section>
+    </div>
+
+    <p class="sources mono">Sources: <a href="https://www.nhl.com/blues/fans/gameday-guide">nhl.com/blues/fans/gameday-guide</a>, <a href="https://www.enterprisecenter.com/guest-services/arena-a-z-guide">enterprisecenter.com/guest-services/arena-a-z-guide</a>, <a href="https://www.metrostlouis.org">metrostlouis.org</a></p>
+    <p class="back"><a href="/">&larr; All pages</a></p>
+  </main>
+
+  <footer class="container text-center text-secondary mono py-5 mt-5 site-footer" style="font-size: 0.75rem; border-top: 1px solid var(--border-subtle);">
+    &copy; 2026 // Jared Mayron<br>
+    <a href="https://mayron.us">mayron.us</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="/STATIC/javascript/main.js" defer></script>
+</body>
+</html>

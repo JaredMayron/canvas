@@ -1,0 +1,614 @@
+/* Page layout for c.mayron.us. Built on the copied mayron.us tokens in main.css:
+   Inter, Playfair Display, JetBrains Mono, the same surfaces, and the green accent. */
+
+:root {
+    color-scheme: light;
+}
+
+[data-theme='dark'] {
+    color-scheme: dark;
+}
+
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.navbar-brand {
+    min-width: 0;
+    flex: 1 1 16rem;
+}
+
+.navbar-brand .brand-tag {
+    font-size: 0.7rem;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin-top: 4px;
+    line-height: 1.45;
+    max-width: 26rem;
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.15rem 0.35rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#theme-toggle {
+    text-decoration: none;
+    line-height: 0;
+    border-radius: 8px;
+}
+
+#theme-toggle:focus-visible,
+.nav-link:focus-visible,
+.page-card:focus-visible,
+.link-card:focus-visible,
+.jump a:focus-visible,
+.back a:focus-visible,
+.sources a:focus-visible {
+    outline: 2px solid var(--accent-green);
+    outline-offset: 3px;
+}
+
+.page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.75rem 1.25rem 0;
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-green);
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+}
+
+.page h1 {
+    font-size: clamp(2.1rem, 5vw, 3.25rem);
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+}
+
+.lede,
+.where,
+.summary {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.where {
+    color: var(--text-main);
+    font-size: 1.2rem;
+    margin-top: 0.35rem;
+}
+
+.seats {
+    color: var(--text-secondary);
+    margin: 0.85rem 0 0;
+    font-size: 0.85rem;
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    line-height: 1.2;
+}
+
+.time-card {
+    margin-top: 1.5rem;
+    background: var(--bg-muted);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 1.35rem 1.4rem 1.2rem;
+}
+
+.hero-time {
+    font-size: clamp(3.2rem, 12vw, 4.75rem);
+    line-height: 0.95;
+    margin: 0;
+}
+
+.puck-label {
+    margin: 0.55rem 0 0;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.gates {
+    margin: 0.35rem 0 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.summary {
+    margin-top: 1.25rem;
+}
+
+.jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.9rem;
+    margin-top: 1.35rem;
+}
+
+.jump a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.jump a:hover {
+    color: var(--accent-green);
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.panel {
+    background: var(--card-bg);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 1.4rem 1.35rem 1.35rem;
+}
+
+.panel h2,
+.page-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    line-height: 1.2;
+    margin: 0 0 0.9rem;
+}
+
+.panel p {
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.panel p + p {
+    margin-top: 0.85rem;
+}
+
+.panel strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.step {
+    position: relative;
+    padding: 0 0 1.35rem 1.15rem;
+    border-left: 2px solid var(--border-subtle);
+}
+
+.step:last-child {
+    padding-bottom: 0;
+}
+
+.step::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0.28rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--card-bg);
+    border: 2px solid var(--accent-green);
+    box-sizing: border-box;
+}
+
+.when {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--text-main);
+    margin-bottom: 0.15rem;
+}
+
+.step h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    margin: 0 0 0.3rem;
+}
+
+.step p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: 8.75rem 1fr;
+    gap: 0.7rem 1rem;
+    margin: 0;
+}
+
+.facts dt {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+}
+
+.facts dd {
+    margin: 0;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+.fare-note {
+    margin-top: 1rem;
+}
+
+.people {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.person {
+    background: var(--bg-muted);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 0.8rem 0.9rem;
+    min-width: 0;
+}
+
+.person .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.08rem;
+    display: block;
+}
+
+.person .role {
+    display: block;
+    margin-top: 0.2rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+}
+
+.callout {
+    border-radius: 12px;
+    padding: 0.95rem 1rem;
+    margin-bottom: 0.35rem;
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.06) 0%, rgba(245, 158, 11, 0.1) 100%);
+    border: 1px solid rgba(217, 119, 6, 0.35);
+}
+
+.callout-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #b45309;
+    margin: 0 0 0.4rem;
+}
+
+.callout p {
+    color: var(--text-main);
+}
+
+[data-theme='dark'] .callout {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.14) 0%, rgba(245, 158, 11, 0.14) 100%);
+    border-color: rgba(251, 191, 36, 0.4);
+}
+
+[data-theme='dark'] .callout-label {
+    color: #fbbf24;
+}
+
+.checklist {
+    list-style: none;
+    margin: 0.85rem 0 0;
+    padding: 0;
+}
+
+.checklist li {
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.checklist li:first-child {
+    border-top: 0;
+    padding-top: 0.15rem;
+}
+
+.fare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.fare {
+    background: var(--bg-muted);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 0.85rem 0.95rem;
+}
+
+.fare .label {
+    display: block;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+}
+
+.fare .amount {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.85rem;
+    line-height: 1.15;
+    margin-top: 0.2rem;
+}
+
+.fare .note {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.link-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-muted);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 0.95rem 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.link-card:hover {
+    border-color: var(--accent-green);
+    background: var(--card-bg);
+    transform: translateY(-2px);
+    color: inherit;
+}
+
+.link-card .mode {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-green);
+    margin-bottom: 0.2rem;
+}
+
+.link-card .title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.08rem;
+    line-height: 1.3;
+}
+
+.link-card .detail {
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.link-card .arrow {
+    flex: 0 0 auto;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.page-list {
+    list-style: none;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.page-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--card-bg);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 1.5rem 1.4rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-card:hover {
+    border-color: var(--accent-green);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+    color: inherit;
+}
+
+.page-card .badge-legacy {
+    margin-bottom: 0.85rem;
+}
+
+.page-card h2 {
+    margin-bottom: 0.45rem;
+}
+
+.page-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.page-card .more {
+    margin-top: 1.1rem;
+    font-size: 0.75rem;
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+.sources {
+    margin: 1.25rem 0 0;
+    font-size: 0.72rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    overflow-wrap: anywhere;
+}
+
+.sources a {
+    color: var(--text-secondary);
+}
+
+.sources a:hover {
+    color: var(--accent-green);
+}
+
+.back {
+    margin: 1.5rem 0 0;
+}
+
+.back a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--accent-green);
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+.site-footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: var(--accent-green);
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .navbar-brand .brand-tag {
+        font-size: 0.65rem;
+    }
+
+    .page {
+        padding: 1.35rem 1rem 0;
+    }
+
+    .panel {
+        padding: 1.15rem 1rem 1.1rem;
+    }
+
+    .people,
+    .fare-grid,
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    .facts {
+        gap: 0.2rem;
+    }
+
+    .facts dt {
+        margin-top: 0.85rem;
+    }
+
+    .facts div:first-child dt,
+    .facts dt:first-of-type {
+        margin-top: 0;
+    }
+
+    .hero-time {
+        font-size: 3.4rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-card,
+    .link-card,
+    .btn-ui {
+        transition: none;
+    }
+
+    .page-card:hover,
+    .link-card:hover {
+        transform: none;
+    }
+}
