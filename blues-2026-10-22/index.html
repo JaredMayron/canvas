@@ -31,7 +31,6 @@
     <div class="container nav-row">
       <a class="navbar-brand" href="/">
         <div class="serif">Jared Mayron</div>
-        <div class="mono text-secondary brand-tag">Academic research, orphaned projects, and creative engineering</div>
       </a>
       <ul class="nav-links">
         <li><a class="nav-link" href="/">Home</a></li>
@@ -65,15 +64,18 @@
         <p class="gates">Gates open 5:30pm</p>
       </div>
       <p class="summary">Tonight's plan from the hotel to Cameron's to Enterprise Center and back, plus a note for tomorrow's flight home.</p>
-      <nav class="jump" aria-label="On this page">
-        <a href="#tonight">Tonight</a>
-        <a href="#tickets">Tickets</a>
-        <a href="#whos-going">Who's going</a>
-        <a href="#before">Know before you go</a>
-        <a href="#metrolink">MetroLink</a>
-        <a href="#back">Getting back</a>
-        <a href="#directions">Directions</a>
-        <a href="#tomorrow">Tomorrow</a>
+      <nav class="on-page" aria-labelledby="on-this-page">
+        <h2 id="on-this-page" class="on-page-title">On this page</h2>
+        <ul class="on-page-links">
+          <li><a href="#tonight">Tonight</a></li>
+          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="#whos-going">Who's going</a></li>
+          <li><a href="#before">Know before you go</a></li>
+          <li><a href="#metrolink">MetroLink</a></li>
+          <li><a href="#back">Getting back</a></li>
+          <li><a href="#directions">Directions</a></li>
+          <li><a href="#tomorrow">Tomorrow</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -182,6 +184,83 @@
           <dd>About 5am to 1am daily</dd>
         </dl>
         <p class="fare-note">A round trip on single rides is $5.00, the same as a One-Day Pass, so either works. Tap &amp; Ride in the Transit app caps your fare at the pass price automatically.</p>
+        <figure class="route-map">
+          <figcaption id="route-map-title" class="route-map-title">Tonight's route</figcaption>
+          <div class="route-diagram" role="img" aria-labelledby="route-map-title route-map-desc">
+            <p id="route-map-desc" class="visually-hidden">Schematic, not to scale. To the game: Cortex station to Civic Center on the Red Line east, with the Blue Line as backup, then a short walk to Enterprise Center. After the game: Blue Line west from Civic Center to Brentwood I-64. The Red Line does not go to Brentwood.</p>
+            <div class="route-legs" aria-hidden="true">
+              <div class="route-leg">
+                <p class="route-leg-kicker">To the game</p>
+                <ol class="route-rail">
+                  <li class="route-stop">
+                    <span class="route-mark route-mark-shared"></span>
+                    <span class="route-copy">
+                      <span class="route-name">Cortex</span>
+                      <span class="route-kind">MetroLink station</span>
+                    </span>
+                  </li>
+                  <li class="route-hop route-hop-both">
+                    <span class="route-copy">
+                      <span class="route-name">Red Line east</span>
+                      <span class="route-kind">Blue Line is the backup</span>
+                    </span>
+                  </li>
+                  <li class="route-stop">
+                    <span class="route-mark route-mark-shared"></span>
+                    <span class="route-copy">
+                      <span class="route-name">Civic Center</span>
+                      <span class="route-kind">MetroLink station</span>
+                    </span>
+                  </li>
+                  <li class="route-hop route-hop-walk">
+                    <span class="route-copy">
+                      <span class="route-name">Short walk</span>
+                    </span>
+                  </li>
+                  <li class="route-stop">
+                    <span class="route-mark route-mark-arena"></span>
+                    <span class="route-copy">
+                      <span class="route-name">Enterprise Center</span>
+                      <span class="route-kind">Arena</span>
+                    </span>
+                  </li>
+                </ol>
+              </div>
+              <div class="route-leg">
+                <p class="route-leg-kicker">After the game</p>
+                <ol class="route-rail">
+                  <li class="route-stop">
+                    <span class="route-mark route-mark-shared"></span>
+                    <span class="route-copy">
+                      <span class="route-name">Civic Center</span>
+                      <span class="route-kind">MetroLink station</span>
+                    </span>
+                  </li>
+                  <li class="route-hop route-hop-blue">
+                    <span class="route-copy">
+                      <span class="route-name">Blue Line west</span>
+                      <span class="route-kind">Toward Shrewsbury. Red Line does not go to Brentwood.</span>
+                    </span>
+                  </li>
+                  <li class="route-stop">
+                    <span class="route-mark route-mark-blue"></span>
+                    <span class="route-copy">
+                      <span class="route-name">Brentwood I-64</span>
+                      <span class="route-kind">MetroLink station</span>
+                    </span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <ul class="route-legend" aria-hidden="true">
+            <li><span class="route-swatch route-swatch-red"></span>Red Line</li>
+            <li><span class="route-swatch route-swatch-blue"></span>Blue Line</li>
+            <li><span class="route-swatch route-swatch-walk"></span>Walk</li>
+            <li><span class="route-swatch route-swatch-arena"></span>Arena</li>
+          </ul>
+          <p class="route-map-note">Schematic, not to scale. <a href="https://www.metrostlouis.org/system-maps/">Metro St. Louis system maps</a>.</p>
+        </figure>
       </section>
 
       <section class="panel" id="back" aria-labelledby="back-title">
