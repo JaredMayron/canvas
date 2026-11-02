@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var dark = localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+  <title>Ozark float trip: Jul 30 to Aug 1, 2027</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Valhalla Voyage float trip at Ozark Outdoors, Missouri, Fri Jul 30 to Sun Aug 1, 2027. Accepted on Facebook.">
+  <meta name="author" content="Jared Mayron">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/STATIC/images/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/STATIC/styles/main.css?v=3">
+  <link rel="stylesheet" href="/STATIC/styles/site.css?v=5">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-row">
+      <a class="navbar-brand" href="/">
+        <div class="serif">Jared Mayron</div>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li><a class="nav-link" href="https://mayron.us">mayron.us</a></li>
+        <li>
+          <button id="theme-toggle" class="btn btn-link nav-link p-2" type="button" aria-label="Toggle theme">
+            <svg id="theme-toggle-dark-icon" class="d-none" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="d-none" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page wide">
+    <header class="hero">
+      <div class="pills">
+        <span class="pill">Accepted on Facebook</span>
+      </div>
+      <h1 class="serif">Ozark float trip</h1>
+      <p class="where">Fri Jul 30, 2pm to Sun Aug 1, 11am</p>
+      <p class="summary">Valhalla Voyage at Ozark Outdoors Resort, Missouri. The float itself is the morning of Sat Jul 31. This is the one summer plan that is already accepted. Nothing else about the drive is written down yet.</p>
+      <nav class="on-page" aria-labelledby="on-this-page">
+        <h2 id="on-this-page" class="on-page-title">On this page</h2>
+        <ul class="on-page-links">
+          <li><a href="#route">Route</a></li>
+          <li><a href="#stay">Stops and lodging</a></li>
+          <li><a href="#flights">Flights</a></li>
+          <li><a href="#open">Checklist</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="stack">
+      <section class="panel" id="route" aria-labelledby="route-title">
+        <h2 id="route-title" class="serif">Route</h2>
+        <svg class="route-map" viewBox="0 0 720 340" role="img" aria-labelledby="float-map-title">
+          <title id="float-map-title">Schematic map from home at DFW northeast to Ozark Outdoors in Missouri.</title>
+          <line class="line" x1="198.4" y1="246.4" x2="531.4" y2="107"></line>
+          <circle class="pin-home" cx="198.4" cy="246.4" r="7"></circle>
+          <text x="198" y="270" text-anchor="middle">Home (DFW)</text>
+          <circle class="pin-trip" cx="531.4" cy="107" r="7"></circle>
+          <text x="531" y="92" text-anchor="middle">Ozark Outdoors</text>
+        </svg>
+        <ul class="map-legend">
+          <li><span class="dot pin-home"></span> Home</li>
+          <li><span class="dot pin-trip"></span> This trip</li>
+        </ul>
+        <ol class="route">
+          <li>Home, Dallas–Fort Worth</li>
+          <li>Ozark Outdoors Resort, Missouri <span>(around 38.1 N, 91.3 W)</span></li>
+        </ol>
+        <p style="margin-top: 0.85rem;">No drive time is in the notes. Mon Aug 2 is a day at home before Las Vegas.</p>
+      </section>
+
+      <section class="panel" id="stay" aria-labelledby="stay-title">
+        <h2 id="stay-title" class="serif">Stops and lodging</h2>
+        <dl class="facts">
+          <dt>Dates</dt>
+          <dd>Fri Jul 30, 2pm to Sun Aug 1, 11am</dd>
+          <dt>Float</dt>
+          <dd>Morning of Sat Jul 31</dd>
+          <dt>Where</dt>
+          <dd>Ozark Outdoors Resort</dd>
+          <dt>Status</dt>
+          <dd><span class="pill">Accepted on Facebook</span></dd>
+        </dl>
+        <p style="margin-top: 0.9rem;">The notes name the resort as the place to stay. They do not list a separate hotel or a night-by-night breakdown.</p>
+      </section>
+
+      <section class="panel" id="flights" aria-labelledby="flights-title">
+        <h2 id="flights-title" class="serif">Flights</h2>
+        <p>No flight. This one is a drive from home. Fare and points comparisons for the summer are on the <a href="/summer-2027/family-trip/#flights">family trip</a>, and they do not cover Missouri.</p>
+      </section>
+
+      <section class="panel" id="open" aria-labelledby="open-title">
+        <h2 id="open-title" class="serif">Checklist</h2>
+        <ul class="check">
+          <li class="done"><span class="mark" aria-hidden="true"></span><span><span class="sr">Done. </span>Accepted on Facebook</span></li>
+        </ul>
+        <p style="margin-top: 0.85rem;">Nothing else is listed as still open for this trip. Flights and hotels in the summer-wide list are for the other trips.</p>
+      </section>
+    </div>
+
+    <p class="back"><a href="/summer-2027/">&larr; Summer 2027</a></p>
+  </main>
+
+  <footer class="container text-center text-secondary mono py-5 mt-5 site-footer" style="font-size: 0.75rem; border-top: 1px solid var(--border-subtle);">
+    &copy; 2026 // Jared Mayron<br>
+    <a href="https://mayron.us">mayron.us</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="/STATIC/javascript/main.js" defer></script>
+</body>
+</html>
