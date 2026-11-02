@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var dark = localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+  <title>Thanksgiving in Phoenix: Nov 26 to 28</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Flights, the day-by-day plan, Jay Leno with Mom, and what is still open before Thanksgiving.">
+  <meta name="author" content="Jared Mayron">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/STATIC/images/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/STATIC/styles/main.css?v=3">
+  <link rel="stylesheet" href="/STATIC/styles/site.css?v=5">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-row">
+      <a class="navbar-brand" href="/">
+        <div class="serif">Jared Mayron</div>
+      </a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li><a class="nav-link" href="https://mayron.us">mayron.us</a></li>
+        <li>
+          <button id="theme-toggle" class="btn btn-link nav-link p-2" type="button" aria-label="Toggle theme">
+            <svg id="theme-toggle-dark-icon" class="d-none" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="d-none" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <header class="hero">
+      <div class="pills">
+        <span class="pill">Flights booked</span>
+        <span class="pill quiet">Staying with family</span>
+      </div>
+      <h1 class="serif">Thanksgiving in Phoenix</h1>
+      <p class="where">Thu Nov 26 to Sat Nov 28, 2026</p>
+      <p class="seats mono">DFW to PHX on American</p>
+      <div class="time-card">
+        <p class="hero-time serif" id="count-label">24 days</p>
+        <p class="puck-label mono" id="count-sub">until wheels up from DFW</p>
+      </div>
+      <p class="summary">Flights, the day-by-day plan, Jay Leno with Mom, and what is still open before Thanksgiving. Status as of Wed Oct 21, 2026.</p>
+      <nav class="on-page" aria-labelledby="on-this-page">
+        <h2 id="on-this-page" class="on-page-title">On this page</h2>
+        <ul class="on-page-links">
+          <li><a href="#flights">Flights</a></li>
+          <li><a href="#time-zones">Time zones</a></li>
+          <li><a href="#day-by-day">Day by day</a></li>
+          <li><a href="#jay-leno">Jay Leno</a></li>
+          <li><a href="#stay">Stay and family</a></li>
+          <li><a href="#before">Before you go</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="stack">
+      <section class="panel" id="flights" aria-labelledby="flights-title">
+        <h2 id="flights-title" class="serif">Flights</h2>
+        <div class="pair">
+          <div>
+            <h3>Out: Thu Nov 26</h3>
+            <dl class="facts">
+              <dt>Flight</dt>
+              <dd>AA 1489, nonstop</dd>
+              <dt>Departs</dt>
+              <dd>DFW 7:26am CT</dd>
+              <dt>Arrives</dt>
+              <dd>PHX 9:12am MST</dd>
+              <dt>In the air</dt>
+              <dd>About 2 hr 46 min</dd>
+              <dt>Leave by</dt>
+              <dd><span class="pill">6:26am CT</span></dd>
+            </dl>
+          </div>
+          <div>
+            <h3>Home: Sat Nov 28</h3>
+            <dl class="facts">
+              <dt>Flight</dt>
+              <dd>AA 2322, nonstop</dd>
+              <dt>Departs</dt>
+              <dd>PHX 3:00pm MST</dd>
+              <dt>Arrives</dt>
+              <dd>DFW 6:30pm CT</dd>
+              <dt>In the air</dt>
+              <dd>About 2 hr 30 min</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="time-zones" aria-labelledby="time-zones-title">
+        <h2 id="time-zones-title" class="serif">Time zones</h2>
+        <div class="callout callout-info" role="note">
+          <p class="callout-label">Phoenix is 1 hour behind Dallas</p>
+          <p>Arizona does not observe daylight saving time, so in late November Phoenix (MST) runs 1 hour behind Dallas (CT). Landing at 9:12am MST is 10:12am in Dallas, and the 8:00pm Leno show is 9:00pm Dallas time.</p>
+        </div>
+      </section>
+
+      <section class="panel" id="day-by-day" aria-labelledby="day-by-day-title">
+        <h2 id="day-by-day-title" class="serif">Day by day</h2>
+
+        <div class="day-block">
+          <h3>Wed Nov 25 <span class="day-label">Prep day in Dallas</span></h3>
+          <ol class="timeline">
+            <li class="step key">
+              <time class="when" datetime="2026-11-25T07:26-06:00">7:26am CT</time>
+              <h3>AA check-in opens</h3>
+              <p>24 hours before AA 1489, in the American app.</p>
+            </li>
+            <li class="step">
+              <span class="when">6:00 to 8:00pm CT</span>
+              <h3>Midweek coffee and desserts (optional)</h3>
+              <p>La Madeleine, 2101 N Collins St, Arlington. Early flight the next morning.</p>
+            </li>
+            <li class="step">
+              <span class="when">Evening</span>
+              <h3>Pack and leave-by check</h3>
+              <p>Bag by the door, alarm set for the 6:26am departure.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="day-block">
+          <h3>Thu Nov 26 <span class="day-label">Thanksgiving, travel day</span></h3>
+          <ol class="timeline">
+            <li class="step key">
+              <time class="when" datetime="2026-11-26T06:26-06:00">6:26am CT</time>
+              <h3>Leave for DFW</h3>
+              <p>About 25 minutes from Las Colinas plus airport buffer.</p>
+            </li>
+            <li class="step">
+              <time class="when" datetime="2026-11-26T07:26-06:00">7:26am CT</time>
+              <h3>AA 1489 departs DFW</h3>
+              <p>Nonstop, about 2 hr 46 min in the air.</p>
+            </li>
+            <li class="step">
+              <time class="when" datetime="2026-11-26T09:12-07:00">9:12am MST</time>
+              <h3>Land at PHX</h3>
+              <p>Sky Harbor. Ride to the family house not set yet.</p>
+            </li>
+            <li class="step">
+              <span class="when">Afternoon</span>
+              <h3>Thanksgiving with family</h3>
+              <p>Staying at the family house, no hotel.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="day-block">
+          <h3>Fri Nov 27 <span class="day-label">Family day and Jay Leno</span></h3>
+          <ol class="timeline">
+            <li class="step">
+              <span class="when">Daytime</span>
+              <h3>Family time in Phoenix</h3>
+              <p>Work is off Thursday and Friday.</p>
+            </li>
+            <li class="step">
+              <time class="when" datetime="2026-11-27T15:00-07:00">3:00pm MST</time>
+              <h3>AA check-in opens for the return</h3>
+              <p>24 hours before AA 2322.</p>
+            </li>
+            <li class="step key">
+              <time class="when" datetime="2026-11-27T20:00-07:00">8:00pm MST</time>
+              <h3>Jay Leno with Mom</h3>
+              <p>Salt River Grand Ballroom, Talking Stick Resort, Scottsdale. 21+. About 2 hours, end time not published.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="day-block">
+          <h3>Sat Nov 28 <span class="day-label">Fly home</span></h3>
+          <ol class="timeline">
+            <li class="step">
+              <span class="when">Midday</span>
+              <h3>Head to Sky Harbor</h3>
+              <p>Aim to be at PHX by about 1:30pm MST.</p>
+            </li>
+            <li class="step key">
+              <time class="when" datetime="2026-11-28T15:00-07:00">3:00pm MST</time>
+              <h3>AA 2322 departs PHX</h3>
+              <p>Nonstop, about 2 hr 30 min in the air.</p>
+            </li>
+            <li class="step">
+              <time class="when" datetime="2026-11-28T18:30-06:00">6:30pm CT</time>
+              <h3>Land at DFW</h3>
+              <p>Ride home from DFW not set yet.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="panel" id="jay-leno" aria-labelledby="jay-leno-title">
+        <h2 id="jay-leno-title" class="serif">Jay Leno, Fri Nov 27</h2>
+        <dl class="facts">
+          <dt>Show</dt>
+          <dd>8:00pm MST, about 2 hours</dd>
+          <dt>Venue</dt>
+          <dd>Salt River Grand Ballroom, Talking Stick Resort</dd>
+          <dt>Address</dt>
+          <dd>9800 E Talking Stick Way, Scottsdale, AZ 85256</dd>
+          <dt>With</dt>
+          <dd>Mom</dd>
+          <dt>Tickets</dt>
+          <dd><span class="pill warn">Not yet confirmed</span></dd>
+          <dt>Box office</dt>
+          <dd>480-850-7734</dd>
+          <dt>Age</dt>
+          <dd>21+</dd>
+        </dl>
+      </section>
+
+      <section class="panel" id="stay" aria-labelledby="stay-title">
+        <h2 id="stay-title" class="serif">Stay and family</h2>
+        <dl class="facts">
+          <dt>Lodging</dt>
+          <dd>Family house, Phoenix. No hotel needed. About 2 miles from Talking Stick.</dd>
+          <dt>Work</dt>
+          <dd>Off Thu Nov 26 and Fri Nov 27. Saturday is the weekend.</dd>
+          <dt>After you fly home</dt>
+          <dd>Sun Nov 29 and Mon Nov 30. Your parents drive to Palm Springs Sunday, then LAX Monday for Egypt.</dd>
+        </dl>
+      </section>
+
+      <section class="panel" id="before" aria-labelledby="before-title">
+        <h2 id="before-title" class="serif">Before you go</h2>
+        <p class="caption">Status as of Wed Oct 21, 2026.</p>
+        <ul class="check">
+          <li class="done"><span class="mark" aria-hidden="true"></span><span><span class="sr">Done. </span>Flights booked on American</span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Ride to DFW for the 6:26am CT departure<span class="meta">Drive and park, or rideshare</span></span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Ride from PHX to the family house<span class="meta">Thu Nov 26, 9:12am MST</span></span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Ride back to PHX for the 3:00pm flight<span class="meta">Sat Nov 28</span></span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Ride home from DFW<span class="meta">Sat Nov 28, 6:30pm CT</span></span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Jay Leno tickets<span class="meta">Not yet confirmed</span></span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Flight watch for delays and cancellations<span class="meta">Starts around Sat Nov 21</span></span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Check in for AA 1489<span class="meta">Opens Wed Nov 25, 7:26am CT</span></span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Check in for AA 2322<span class="meta">Opens Fri Nov 27, 3:00pm MST</span></span></li>
+          <li><span class="mark" aria-hidden="true"></span><span><span class="sr">Open. </span>Pack, including ID for the 21+ show<span class="meta">Wed Nov 25 evening</span></span></li>
+        </ul>
+      </section>
+
+      <section class="panel" id="links" aria-labelledby="links-title">
+        <h2 id="links-title" class="serif">Links</h2>
+        <div class="links">
+          <a class="link-card" href="https://www.aa.com" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">aa.com</span>
+              <span class="title">Manage the trip on aa.com</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://www.talkingstickresort.com/entertainment-acts/jay-leno/" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">talkingstickresort.com</span>
+              <span class="title">Jay Leno at Talking Stick Resort</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://app.notion.com/p/3f59601c200f818ca54ced9ddcedbbd8" target="_blank" rel="noopener noreferrer">
+            <span>
+              <span class="mode">notion.com</span>
+              <span class="title">Trip hub in Notion</span>
+            </span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <p class="back"><a href="/">&larr; All pages</a></p>
+  </main>
+
+  <footer class="container text-center text-secondary mono py-5 mt-5 site-footer" style="font-size: 0.75rem; border-top: 1px solid var(--border-subtle);">
+    &copy; 2026 // Jared Mayron<br>
+    <a href="https://mayron.us">mayron.us</a>
+  </footer>
+
+  <script>
+    (function () {
+      var dep = Date.UTC(2026, 10, 26);
+      var now = new Date();
+      var today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+      var days = Math.round((dep - today) / 86400000);
+      var label = days > 1 ? days + " days" : days === 1 ? "Tomorrow" : days === 0 ? "Today" : days >= -2 ? "In Phoenix" : "Home";
+      var sub = days > 1 ? "until wheels up from DFW" : days === 1 || days === 0 ? "AA 1489 departs 7:26am CT" : days >= -2 ? "trip in progress" : "trip complete";
+      var labelEl = document.getElementById("count-label");
+      var subEl = document.getElementById("count-sub");
+      if (labelEl) labelEl.textContent = label;
+      if (subEl) subEl.textContent = sub;
+    })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="/STATIC/javascript/main.js" defer></script>
+</body>
+</html>
